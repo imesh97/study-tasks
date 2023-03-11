@@ -1,0 +1,19 @@
+import { FaGoogle } from 'react-icons/fa'
+
+export default function Login({ handler }) {
+    return (
+        <div className="bg-slate-900 w-full min-h-screen">
+            
+            <div className="flex flex-col items-center justify-center text-center px-6 py-8 mx-auto h-screen lg:py-0">
+                <h1 className="mb-4 text-4xl font-extrabold leading-none text-nord6 md:text-5xl lg:text-6xl">Welcome to Study Tasks!</h1>
+                <p className="mb-6 text-lg font-normal text-gray-400 lg:text-2xl">Login to start managing your tasks...</p>
+                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-blue-800" onClick={() => handler()}>
+                    <span className="flex items-center px-5 py-2.5 transition-all ease-in duration-75 bg-slate-900 rounded-md group-hover:bg-opacity-0 md:text-lg">
+                        <FaGoogle className="mr-2" />Login with Google
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    )
+}
