@@ -22,7 +22,7 @@ function SidebarLink({ path, icon, text }) {
         className={
           "flex flex-row items-center h-10 px-3 rounded-lg  " +
           (router.pathname == path
-            ? "text-nord1 bg-nord6"
+            ? "text-indigo-700 bg-indigo-200"
             : "text-indigo-700 hover:bg-indigo-700 hover:text-indigo-100")
         }>
         <span className="flex items-center justify-center text-lg">{icon}</span>
@@ -36,8 +36,8 @@ function SidebarHeader({ className }) {
   return (
     <div className={"sidebar-header flex items-center px-4 py-4 " + className}>
       <Link href="/" className="inline-flex flex-row items-center">
-        <HiAcademicCap className="w-10 h-10 fill-indigo-700" />
-        <span className="text-indigo-700 text-2xl font-bold ml-2 uppercase">
+        <HiAcademicCap className="w-10 h-10 fill-indigo-600" />
+        <span className="text-indigo-600 text-2xl font-bold ml-2 uppercase">
           Study Tasks
         </span>
       </Link>
@@ -52,7 +52,7 @@ export default function Sidebar() {
   return (
     <>
       <header
-        className="z-40 bg-indigo-900 text-gray-100 flex justify-between items-center md:hidden"
+        className="z-40 bg-indigo-100 text-indigo-600 flex justify-between items-center md:hidden"
         data-dev-hint="mobile menu bar">
         <SidebarHeader className="" />
         <input
