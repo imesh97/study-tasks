@@ -55,7 +55,7 @@ export default function AddTaskModal({ modalHandler, subjects, mutate }) {
                     onChange={(e) => setTask(e.target.value)}
                     type="text"
                     placeholder="Enter task title..."
-                    className="px-3 py-3 placeholder-nord4 text-indigo-900 relative bg-nord6 rounded-lg text-sm border border-nord2 outline-none focus:outline-none focus:ring w-full"
+                    className="px-3 py-3 placeholder-indigo-300 text-indigo-900 relative bg-nord6 rounded-lg text-sm border border-nord2 outline-none focus:outline-none focus:ring w-full"
                   />
                 </div>
               </div>

@@ -37,7 +37,7 @@ export default function AddSubjectModal({ modalHandler, mutate }) {
                     onChange={(e) => setSubject(e.target.value)}
                     type="text"
                     placeholder="Enter subject name..."
-                    className="px-3 py-3 placeholder-nord4 text-indigo-900 relative bg-nord6 rounded-lg text-sm border border-nord2 outline-none focus:outline-none focus:ring w-full"
+                    className="px-3 py-3 placeholder-indigo-300 text-indigo-900 relative bg-nord6 rounded-lg text-sm border border-nord2 outline-none focus:outline-none focus:ring w-full"
                   />
                 </div>
               </div>
