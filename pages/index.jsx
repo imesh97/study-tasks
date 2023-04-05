@@ -1,8 +1,24 @@
 import Head from "next/head";
-import Login from "../components/Login";
 import { useAuth } from "../lib/auth";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const typedElement = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedElement.current, {
+      strings: ["tasks.", "subjects.", "life."],
+      typeSpeed: 100,
+      backSpeed: 120,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   const auth = useAuth();
 
   return (
@@ -20,9 +36,14 @@ export default function Home() {
               <h1 className="mb-4 text-4xl font-bold leading-none text-nord6 md:text-5xl lg:text-6xl">
                 Welcome to Study Tasks!
               </h1>
-              <p className="mb-6 text-lg font-normal text-indigo-200 lg:text-2xl">
-                Use the menu to manage your tasks...
-              </p>
+              <div className="flex">
+                <p className="mb-6 text-lg font-normal text-indigo-200 lg:text-2xl mr-2">
+                  Use the menu to manage your academic
+                </p>
+                <p className="text-lg font-normal text-indigo-200 lg:text-2xl">
+                  <span ref={typedElement} />
+                </p>
+              </div>
             </div>
           </div>
         </>
