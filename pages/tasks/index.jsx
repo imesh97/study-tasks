@@ -64,7 +64,7 @@ export default function Home() {
                 })}
               <div
                 onClick={() => setShowAddModal(true)}
-                className="p-6 w-72 h-48 max-w-sm border border-dashed border-8 rounded shadow-md border-indigo-100 cursor-pointer">
+                className="p-6 w-72 h-48 max-w-sm border-dashed border-8 rounded shadow-md border-indigo-100 cursor-pointer">
                 <div className="h-full flex justify-center items-center">
                   <HiPlus className="mr-2 h-12 w-12 fill-indigo-100" />
                   <h5 className="flex flex-row mb-2 text-xl md:text-2xl font-bold tracking-tight text-indigo-100 break-all">
